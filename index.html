@@ -7,74 +7,44 @@
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Document</title>
 </head>
 <body>
-<div class="example">
-    <div class="comment">Пример получения списка</div>
-    <div class="books" id="books"></div>
-
-    <div class="comment">Пример получения 1 элемента</div>
-
-    <div class="one-book">
-        <form id="get-one-book">
-            <label class="field">
-                <span class="field_label">id книги</span>
-                <input class="field_control" name="bookId"/>
-            </label>
-
-            <button class="button" type="submit">Запросить</button>
-        </form>
-        <div class="one-book_result" id="one-book"></div>
-    </div>
-
-    <div class="comment">Пример добавления книги</div>
-    <div class="add-book">
-        <form id="add-book">
-            <label class="field">
-                <span class="field_label">Имя</span>
-                <textarea class="field_control" name="name"></textarea>
-            </label>
-
-            <label class="field">
-                <span class="field_label">Автор</span>
-                <input class="field_control" name="author"/>
-            </label>
-
-            <label class="field">
-                <span class="field_label">Страниц</span>
-                <input class="field_control" name="pages"/>
-            </label>
-
-            <label class="checkbox">
-                <input
-                        class="checkbox_control"
-                        type="checkbox"
-                        name="isAvailable"
-                />
-                <span class="checkbox_label">Доступна</span>
-            </label>
-
-            <label class="select">
-                <span class="select_label">Выберите жанры</span>
-                <select class="select_control" name="genre" multiple>
-                    <option value="Фантастика">Фантастика</option>
-                    <option value="Классика">Классика</option>
-                    <option value="Детские">Детские</option>
-                    <option value="Бизнес">Бизнес</option>
-                    <option value="Детективы">Детективы</option>
-                </select>
-            </label>
-
-            <button class="btn btn-outline-primary" type="submit">Создать</button>
-        </form>
+<div class="fluid-container main-page">
+    <div class="row">
+        <div class="title-form col-10 col-lg-4">
+            <div class="main-title text-center">
+                <p>Until Stipuha</p>
+            </div>
+            <div class="auth-form">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Логин</label>
+                        <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               placeholder="Enter login">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Пароль</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-outline-success">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="main-page_img col-lg-8 text-center">
+            <img src="img/doshirak.png" width="500px">
+        </div>
     </div>
 </div>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script src="/js/utils.js"></script>
-<script src="/js/main.js"></script>
+
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
