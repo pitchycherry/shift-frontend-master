@@ -6,6 +6,29 @@ const renderBook = book => `
     </div>
 `;
 
+//заглушка
+/*
+const bookList = [
+    {
+        id: 1,
+        name: "North",
+        author: "Nik"
+    },
+    {
+        id: 2,
+        name: "North",
+        author: "Nik"
+    }
+]
+
+function getBookList() {
+    document.querySelector("#books").innerHTML = bookList
+        .map(renderBook)
+        .join("");
+    console.log("Результат запроса книг", bookList);
+}
+*/
+
 createRequest({ path: "/api/v001/books", method: "GET" })
   .then(response => {
     document.querySelector("#books").innerHTML = response
