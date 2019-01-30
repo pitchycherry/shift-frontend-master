@@ -1,15 +1,15 @@
-getOperations();
+getPetitions();
 
-function getOperations() {
+function getPetitions() {
     createRequest({path: 'http://demo6634020.mockable.io/operations', method: 'GET'}, {}).then(response => {
-        renderOperations(response);
+        renderPetitions(response);
     })
 
 }
 
-function renderOperations(data) {
+function renderPetitions(data) {
     /*Заголовок тела страницы*/
-    document.querySelector(".page-body.col-md-8 .b_font").textContent = "Операции:";
+    document.querySelector(".page-body.col-md-8 .b_font").textContent = "Просьбы:";
     /*Компонент для операций*/
     document.querySelector("#page-body_content .row").innerHTML = data.map(operation => `
     
