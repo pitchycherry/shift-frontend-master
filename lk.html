@@ -13,40 +13,60 @@
     <title>Личный кабинет</title>
 </head>
 <body>
-<div class="fluid-container main-page">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <a class="navbar-brand" href="index.html">Until Stipuha</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" onclick="getOperations()">Мои операции <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="getOperations()">Просьбы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="fluid-container lk-page">
     <div class="row">
-        <div class="profile col-md-4">
-            <b>Кириенко Николай</b><br><br>
+        <div class="profile col-md-3">
+            <b class="b_font">Кириенко Николай</b><br><br>
             <p>Баланс: </p>
             <p>Карма: </p>
             <p>Максимальный запрос: </p>
             <button class="btn btn-outline-success">Попросить</button>
             <button class="btn btn-outline-success">Донат</button>
         </div>
-        <div class="operations-list col-md-4">
-            <b>Операции: </b>
-<div id="oper"></div>
-            <div class="card operation" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Дайте денег</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Никита григорьев</h6>
-                    <p class="card-text">Есть нечего совсем, три сотки братан, ну пжлст</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <p class="aim">Цель: 300р</p>
-                    <p class="balance">Собрано: 150р</p>
-                    <a href="#" class="card-link">Помочь</a>
+        <div class="page-body col-md-8">
+            <div class="row">
+                <b class="b_font">Операции: </b>
+                <div class="search-form col-md-2  text-right">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </div>
+
+
+            </div>
+            <br><br>
+
+            <!-- Компонент для карточки операции-->
+            <div id="page-body_content">
+                <div class="row"></div>
             </div>
         </div>
     </div>
 </div>
 
 
-
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+<script src="js/utils.js"></script>
+<script src="js/operations.js" ></script>
 </body>
 </html>

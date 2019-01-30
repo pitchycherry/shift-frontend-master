@@ -29,3 +29,20 @@ html,body {
         visibility: hidden;
     }
 }
+
+/*lk.html*/
+
+.card.operation {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.b_font {
+    font-size: 20px;
+}
+.lk-page {
+    margin-left: 100px;
+    margin-top: 75px;
+}
+.nav-link {
+    cursor: pointer;
+}
