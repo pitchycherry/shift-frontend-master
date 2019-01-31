@@ -46,3 +46,14 @@ html,body {
 .nav-link {
     cursor: pointer;
 }
+
+.btn_info-user {
+    width: 210px;
+    margin-bottom: 5px;
+}
+.input-operations_balance {
+    margin-left: 10px;
+}
+.button-operations {
+    margin-left: 15px;
+}
