@@ -100,6 +100,9 @@ const getFieldValue = element => {
 
 const FIELD_SELECTORS = "input, textarea, select, radio";
 const getFieldData = formElement => {
+  if (typeof formElement === "string") {
+    formElement = document.querySelector(formElement);
+  }
   const elements = formElement.querySelectorAll(FIELD_SELECTORS);
   const result = {};
 

@@ -57,3 +57,12 @@ html,body {
 .button-operations {
     margin-left: 15px;
 }
+.search-form {
+    display: flex;
+}
+.search-form .btn.btn-outline-success {
+    margin-left: 5px;
+}
+.about-user {
+    margin-bottom: 15px;
+}

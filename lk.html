@@ -22,13 +22,13 @@
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" onclick="getOperations()">Мои операции <span class="sr-only">(current)</span></a>
+                <a class="nav-link" onclick="getMyOperation()">Мои просьбы <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" onclick="getOperations()">Просьбы</a>
+                <a class="nav-link" onclick="getOperations()">Просьбы всех пользователей</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" onclick="getUsers()">Другие пользователи</a>
             </li>
         </ul>
     </div>
@@ -38,11 +38,7 @@
         <div class="profile col-md-3"></div>
         <div class="page-body col-md-8">
             <div class="row">
-                <b class="b_font">Операции: </b>
-                <div class="search-form col-md-2  text-right">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </div>
+                <b class="b_font col-lg-8 col-md-6 col-4"></b>
             </div>
             <br><br>
 
@@ -62,6 +58,7 @@
 <script src="js/utils.js"></script>
 <script src="js/operations.js"></script>
 <script src="js/infoUser.js"></script>
-
+<script src="js/users.js"></script>
+<script src="js/addBalance.js"></script>
 </body>
 </html>
