@@ -47,7 +47,8 @@ const createRequest = (options, queryOptions, body) => {
   return fetch(requestUrl, {
     headers: new Headers({
       Accept: "application/json",
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      "WWW-Authenticate": localStorage.getItem('token')
     }),
     method: options.method || "GET",
     body: body ? JSON.stringify(body) : undefined
@@ -99,6 +100,9 @@ const getFieldValue = element => {
 
 const FIELD_SELECTORS = "input, textarea, select, radio";
 const getFieldData = formElement => {
+  if (typeof formElement === "string") {
+    formElement = document.querySelector(formElement);
+  }
   const elements = formElement.querySelectorAll(FIELD_SELECTORS);
   const result = {};
 
